@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "ebuddy",
+    "ebuddy": "ebuddy"
+  },
+  "targets": {},
+  "etags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "ebuddy-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "turbo": "^1.0.0"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "scripts": {
+    "install:all": "npm install --workspaces",
+    "start:all": "npm run start:backend & npm run start:frontend",
+    "start:backend": "npm --prefix apps/backend-repo run emulator",
+    "start:frontend": "npm --prefix apps/frontend-repo run dev"
+  }
+}
